@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/style.css">
+   
+    <script defer src="recursos/alta.js"></script>
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <h1>Agregar Productos</h1>
+
+    <form action="http://localhost:3000/productos" method="POST" id="Agregar">
+    
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    
+    <label for="categoria">Categoría:</label><br>
+    <select id="categoria" name="categoria">
+        <option value="Perifericos">Perifericos</option>
+        <option value="Hardware">Hardware</option>
+        <option value="Monitores">Monitores</option>
+        <option value="Sonido">Sonido</option>
+    </select><br><br>
+    
+    <label for="marca">Marca:</label><br>
+    <input type="text" id="marca" name="marca"><br><br>
+    
+    <label for="stock">Stock:</label><br>
+    <input type="number" id="stock" name="stock"><br><br>
+    
+    <button type="submit" >AGREGAR</button>
+    </form>
+</body>
+</html>
